@@ -1,10 +1,9 @@
 import React, {Component, render} from 'preact-compat';
-import Rating from 'react-star-rating-component';
 
 window.DatoCmsPlugin.init().then((plugin) => {
   plugin.startAutoResizer();
 
-  class Input extends Component {
+  class ContextualRelationships extends Component {
 
     render() {
       return (
@@ -15,5 +14,5 @@ window.DatoCmsPlugin.init().then((plugin) => {
     }
   }
 
-  render(<Input />, document.body);
+  render(<ContextualRelationships />, document.body);
 });
