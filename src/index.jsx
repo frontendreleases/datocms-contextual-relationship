@@ -37,6 +37,8 @@ window.DatoCmsPlugin.init().then((plugin) => {
     render() {
       const { maxRating, value, starsColor } = this.state;
 
+      console.log(this.state);
+
       return (
         <div style={{ fontSize: '20px', letterSpacing: '3px' }}>
           <Rating
